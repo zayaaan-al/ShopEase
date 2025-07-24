@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+/* Navbar styling */
+.navbar {
+  background-color: #222;
+  padding: 15px 20px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 5000px;
+   margin: auto; 
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+ 
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.nav-links {
+  display: flex;
+  gap: 90px;
+  padding-left: 150px;
+  
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Hamburger menu (hidden on large screens) */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive nav behavior */
+@media (max-width: 941px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+ body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.cart-items {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Individual Cart Card */
+.card {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+ color: #d63031;
+}
+
+.cart-item-details {
+  font-size: 16px;
+   color: #8e44ad;
+  font-weight: 500;
+}
+
+.cart-item-price {
+  color: #2b8a3e;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cart-item-rating {
+  color: goldenrod;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.cart-item-remove {
+ background-color: #fb641b;
+   width: 100%;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.cart-item-remove:hover {
+  background-color: #e85c00;
+}
+
+/* Billing Summary */
+.billing-summary {
+  width: 100%;
+  height: 380px;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.billing-summary h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#totalPrice {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2b8a3e;
+  margin-bottom: 25px;
+}
+
+form input {
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+form input:focus {
+  border-color: #2874f0;
+  outline: none;
+}
+
+form button {
+  width: 100%;
+  background-color: #2874f0;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #1f5fbd;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .cart-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .card, .billing-summary {
+    max-width: 100%;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Footer styling */
+.site-footer {
+  background-color: #222;
+  color: #eee;
+  padding: 50px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 300px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-column p, 
+.footer-column ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  border: none;
+  background-color: #ff6f61;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 150px;
+  height: 50px;
+  margin-left: -2px;
+}
+
+.newsletter-form button:hover {
+  background-color: #e2574f;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+  transition: transform 0.3s;
+}
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #aaa;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+
+
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

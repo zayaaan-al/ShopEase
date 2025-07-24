@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+/* Navbar styling */
+.navbar {
+  background-color: #222;
+  padding: 15px 20px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 5000px;
+   margin: auto; 
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+ 
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.nav-links {
+  display: flex;
+  gap: 90px;
+  padding-left: 150px;
+  
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Hamburger menu (hidden on large screens) */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive nav behavior */
+@media (max-width: 941px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+
+ .products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  margin-top: 100px;
+}
+
+/* Individual card */
+.card {
+  width: 100%;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card img.img1 {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Card text content */
+.card-content {
+  padding: 15px 20px 25px;
+}
+
+.card-content h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.card-content h3 {
+  font-size: 16px;
+  color: #2b8a3e;
+  margin-bottom: 10px;
+}
+
+.card-content .category {
+  font-size: 14px;
+  color: #3498db;
+  margin-bottom: 8px;
+}
+
+.card-content .description {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-content .rating {
+  margin-top: 10px;
+  font-size: 14px;
+  color: goldenrod;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%;
+  }
+}
+
+/* Footer styling */
+.site-footer {
+  background-color: #222;
+  color: #eee;
+  padding: 50px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-column p, 
+.footer-column ul {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  border: none;
+  background-color: #ff6f61;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 150px;
+  height: 50px;
+  margin-left: -2px;
+}
+
+.newsletter-form button:hover {
+  background-color: #e2574f;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+  transition: transform 0.3s;
+}
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+.footer-bottom p{
+   color: #bbb;
+}
+
+
+
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
