@@ -6,19 +6,6 @@ async function fetchdata() {
         console.log(products);
         str=``
         products.map((pro)=>{
-        //     str+=`
-        //     <div class="card">
-        //     <a href="./details.html?id=${pro.id}" >
-        
-        //    <center><img class="img1" src="${pro.image}" alt="${pro.title} width="170px height=170px"><br>
-        //    <h2>${pro.title}</h2><br>
-        //    <h3>Price: $${pro.price}</h3><br>
-        //    <p>Category :${pro.category}</p><br>
-        //    <p class="description">${pro.description}</P><br>
-        //    <p class="rating">Rating : ${pro.rating.rate}</p><br></center>
-            
-        //     </a></div>
-        //     `;
         str+=`
         <div class="card">
   <a href="./details.html?id=${pro.id}">
